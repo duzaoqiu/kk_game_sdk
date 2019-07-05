@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01000000"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#01000000"
+        >
+
+        <RelativeLayout
+            android:id="@+id/ll_quick_login"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="top"
+            android:layout_marginTop="35dip"
+            android:visibility="gone"
+            tools:visibility="visible"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                >
+
+                <LinearLayout
+                    android:id="@+id/button_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dip"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/wancms_bg_login_tyy"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_quick_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dip"
+                        android:ellipsize="end"
+                        android:maxWidth="80dp"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="10"
+                        android:singleLine="true"
+                        android:text="tttssssaa"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dip"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textColor="@android:color/white"
+                        android:textSize="15dip"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_welcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="欢迎回来"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dip"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/btn_cutaccount"
+                        android:layout_width="86dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dip"
+                        android:padding="5dip"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cut_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dip"
+                            android:background="@drawable/xs_cutlogin_bg"
+                            android:gravity="center"
+                            android:text="切换账号"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="170dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/wancms_bg_login_tyy"
+                    android:paddingBottom="5dp"
+                    android:visibility="visible"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_loadingline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_loading"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/ttw_giftdialog_top"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="#c0000000"
+                        ></RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_loadingtu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_loadingline"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/wancms_xs_loading2"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout1"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dip"
+                            android:gravity="center"
+                            android:text="正在登陆..."
+                            android:textColor="@android:color/white"
+                            android:textSize="20dip"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/wancms_bg_login_noquick"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="10dip"
+            android:visibility="visible"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/ll_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="10dip"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/wancms_login"
+                    />
+
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/wancms_clear"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/ll_logo"
+                >
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:background="@drawable/ttw_edit_two_bg"
+                    android:hint="请输入游戏帐号"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="30dip"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#818181"
+                    android:textColorHint="#c8c8c8"
+                    android:textSize="15dip"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_userselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_alignBottom="@id/et_username"
+                    android:layout_alignRight="@id/et_username"
+                    android:layout_alignTop="@id/et_username"
+                    android:focusable="true"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/xs_login_up"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/rl_username"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                >
+
+                <EditText
+                    android:id="@+id/et_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/ttw_edit_two_bg"
+                    android:hint="请输入游戏密码"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="50dip"
+                    android:password="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#818181"
+                    android:textColorHint="#c8c8c8"
+                    android:textSize="15dip"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_pwdishow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_alignBottom="@id/et_pwd"
+                    android:layout_alignRight="@id/et_pwd"
+                    android:layout_alignTop="@id/et_pwd"
+                    android:focusable="true"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/wancms_eye_close"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_login_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_pwd"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="0dip"
+                        android:layout_height="40dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/wancms_go_login"
+                        android:gravity="center"
+                        android:text="立即登录"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_login_register"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"                android:text="没有账号?  去注册"
+                android:textColor="@color/orange"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/btn_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_login_register"
+                android:background="#FFFFFF"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="忘记密码?"
+                android:textColor="@color/orange"
+                android:textSize="13sp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/tv_other_loginway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_forget"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1"
+                    android:background="#CECBCE"
+                    />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="其他登录方式"
+                    android:textColor="#878787"
+                    android:textSize="12sp"
+                    />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1dip"
+                    android:layout_weight="1"
+                    android:background="#CECBCE"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_other_loginway"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_login_visitor"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/wan_login_visitor"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_login_wechat"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/wancms_login_weixin"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_login_qq"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/wancms_login_qq"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
